@@ -1,0 +1,52 @@
+.chevron-sharp {
+    display: flex;
+}
+.playlists {
+    &--header, &--content {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 1.3fr 1.3fr 1.3fr 0.4fr 0.4fr;
+        font-size: 1.6rem;
+        color: #707070;
+        align-items: center;
+        .other {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    
+    &--images{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &--content{
+        color: #fff;
+        padding: 1rem 0;
+        transition: all 0.2s ease;
+        .horizontal-sharp{
+            visibility: hidden;
+        }
+        &:hover {
+            background-color: #7070704d;
+            .horizontal-sharp {
+                visibility: visible;
+            }
+        }
+    }
+    &--content .title, &--header .title {
+        font-weight: 400;
+        position: relative;
+        padding-left: 4rem; 
+    }
+    &--order{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1rem;
+    }
+    
+}
+
+
