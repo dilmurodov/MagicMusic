@@ -56,3 +56,23 @@
         }
     }
 }
+.album--background {
+    padding-bottom: 4rem !important;
+    background-image: url(/images/Album-BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    .header-top {
+        .btn:not(.btn--linear-border) {
+            background-color: transparent !important;
+        }
+        background-color: transparent !important;
+        input#search {
+            background-color: transparent;
+        }
+        input#search::placeholder {
+            background-color: transparent;
+        }
+    }
+}

@@ -99,6 +99,31 @@ ul, li {
   background-color: transparent;
 }
 
+.album--background {
+  padding-bottom: 4rem !important;
+  background-image: url(/images/Album-BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.album--background .header-top {
+  background-color: transparent !important;
+}
+
+.album--background .header-top .btn:not(.btn--linear-border) {
+  background-color: transparent !important;
+}
+
+.album--background .header-top input#search {
+  background-color: transparent;
+}
+
+.album--background .header-top input#search::placeholder {
+  background-color: transparent;
+}
+
 .main-text {
   padding: 11rem 0;
   font-size: 4.8rem;
@@ -583,6 +608,11 @@ main {
 
 .podcasts__body--content:hover .before__icon--2 {
   visibility: visible;
+}
+
+.album--background .playlists--header, .album--background .playlists--content {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 0.2fr 0.2fr !important;
 }
 
 .footer {
