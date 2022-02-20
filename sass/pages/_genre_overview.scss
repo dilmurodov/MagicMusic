@@ -1,0 +1,11 @@
+.overview{
+    .header-overview{
+        display: flex;
+        align-items: flex-end;
+        gap: 2rem;
+        padding: 3rem 0;
+        span{
+            padding-bottom: 0.6rem;
+        }
+    }
+}

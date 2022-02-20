@@ -316,6 +316,17 @@ main {
   font-size: 1.6rem;
 }
 
+.overview .header-overview {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.overview .header-overview span {
+  padding-bottom: 0.6rem;
+}
+
 .show-more {
   width: 100%;
   text-align: center;
