@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Artist</title>
+</head>
+
+<body>
+    <main class="artist--background">
+        <header class="header after-sign">
+            <section class="header-top">
+                <div class="header-logo">
+                    <img src="./images/logo.png" alt="">
+                    <a class="btn" style="color: #707070;" href="#">Home</a>
+                    <a class="btn" style="color: #707070;" href="#">Library</a>
+                    <a style="background-color: #707070 !important;" class="btn btn--linear-border" href="#">Browse</a>
+                </div>
+                <div class="btn top-center-btns">
+                    <a href="#" style="color: #707070;">Genres & Moods</a>
+                    <span class="anime"></span>
+                    <a href="#" style="color: #707070;">New Release</a>
+                    <span class="anime"></span>
+                    <a href="#" style="color: #707070;">Podcasts/<span style="color: #ffff;">StarTalk Radio</span></a>
+                    <span class="anime"></span>
+
+                </div>
+                <div class="header-menus">
+                    <!-- <a class="btn btn--light header-menus__sign-up" href="">Sign up</a> -->
+                    <div class="btn search--input">
+                        <label for="search" class="search-icon">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </label>
+                        <input type="text" id="search" placeholder="Search">
+
+                    </div>
+
+                    <div class="account">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        &nbsp;&nbsp; John Doe &nbsp;&nbsp;
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <div class="main home-sections">
+            <div class="podcaster">
+                <div class="podcaster__image">
+                    <img class="non-hover" src="./images/Artist-title-img.png" alt="">
+                    <span class="check-chevron"><ion-icon style="color: #2d9bef;" name="checkmark-circle"></ion-icon></span>
+                </div>
+                <div class="podcaster--about">
+                    <div class="podcaster--about-1">
+                        <h3 class="middle-text">Artist</h3>
+                        <h1 class="podcaster-title big-text">David Bowie</h1>
+                        <div class="parts middle-text margin-top-3">
+                            <div class=""><a href="#">OVERVIEW</a></div>
+                            <div class=""><a href="#">ABOUT</a></div>
+                            <div class=""><a href="#">FANS ALSO LIKE</a></div>
+                        </div>
+                    </div>
+                    <div class="podcaster--about-2">
+                        <a href="#" class="btn btn--linear">Play</a>
+                        <div class="heart-round">
+                            <ion-icon name="heart"></ion-icon>
+                        </div>
+                        <ion-icon class="icon-style" name="ellipsis-horizontal-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="playlists">
+                <div class="playlists--header">
+                    <div class="title">
+                        <span class="playlists--order">#</span>
+                        TITLE
+                    </div>
+                    <div class="artist">
+                        ARTIST
+                    </div>
+                    <div class="album">
+                        ALBUM
+                    </div>
+                    <div class="time">
+                        TIME
+                    </div>
+                    <div class="other">
+                        <!-- <div class="other--dots">
+                            <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">1</span>
+                        <div class="playlists--images">
+                            <img src="./images/Artist/img-1.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        David Bowie
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">2</span>
+                        <div class="playlists--images">
+                            <img src="./images/Artist/img-2.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        David Bowie
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">3</span>
+                        <div class="playlists--images">
+                            <img src="./images/Artist/img-3.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        David Bowie
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">4</span>
+                        <div class="playlists--images">
+                            <img src="./images/Artist/img-4.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        David Bowie
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">5</span>
+                        <div class="playlists--images">
+                            <img src="./images/Artist/img-5.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        David Bowie
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="show-more margin-top-5">
+                <a href="#" class="btn">Show More</a>
+            </div>
+            <section class="margin-top-3">
+                <div class="row-title">
+                    <div class="row-title--left">
+                        <h3 class="card-sub-title main-title">
+                            Albums
+                        </h3>
+                       
+                    </div>
+                    <div class="row-title--right">
+                        VIEW ALL
+                    </div>
+                </div>
+                <br>
+                <div class="grid-structure">
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-1.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-2.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-3.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-4.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-5.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-6.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                </div>
+                <br><br>
+                <div class="grid-structure">
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-7.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+    
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-8.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-9.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+    
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-10.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+    
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-11.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-1/img-12.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                </div>
+                <br><br>
+            </section>
+            <div class="show-more">
+                <a href="#" class="btn">Show More</a>
+            </div>
+            <section class="margin-top-3">
+                <div class="row-title">
+                    <div class="row-title--left">
+                        <h3 class="card-sub-title main-title">
+                            Singles & EPs
+                        </h3>
+                       
+                    </div>
+                    <div class="row-title--right">
+                        VIEW ALL
+                    </div>
+                </div>
+                <br>
+                <div class="grid-structure">
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-1.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-2.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-3.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-4.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-5.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-6.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                </div>
+                <br><br>
+                <div class="grid-structure">
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-7.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+    
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-8.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-9.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+    
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-10.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+    
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-11.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-2/img-12.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                </div>
+                <br><br>
+            </section>
+            <div class="show-more">
+                <a href="#" class="btn">Show More</a>
+            </div>
+            <section class="margin-top-3">
+                <div class="row-title">
+                    <div class="row-title--left">
+                        <h3 class="card-sub-title main-title">
+                            Appears in these playlists
+                        </h3>
+                       
+                    </div>
+                    <div class="row-title--right">
+                        VIEW ALL
+                    </div>
+                </div>
+                <br>
+                <div class="grid-structure">
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-3/img-1.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-3/img-2.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-3/img-3.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-3/img-4.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-3/img-5.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                    <div>
+                        <img class="small__img--1" src="./images/Artist/row-3/img-6.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price">
+                            <ion-icon name="heart"></ion-icon>948.117
+                        </span>
+                    </div>
+                </div>
+                <br><br>
+            </section>
+            <div class="show-more">
+                <a href="#" class="btn">Show More</a>
+            </div>
+            <section class="">
+                <div class="row-title">
+                    <div class="row-title--left">
+                        <h3 class="card-sub-title main-title">
+                            You might like these artists
+                        </h3>
+                       
+                    </div>
+                    <div class="row-title--right">
+                        <ion-icon name="chevron-back"></ion-icon>
+                        <ion-icon name="chevron-forward"></ion-icon>
+                    </div>
+                </div>
+                <div class="grid-structure">
+                    <div style="text-align: center;">
+                        <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-1.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-2.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-3.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-4.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-5.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-6.png" alt="">
+                        <h6 class="card-sub-title">
+                            Queen
+                        </h6>
+                        <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

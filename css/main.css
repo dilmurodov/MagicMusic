@@ -124,6 +124,31 @@ ul, li {
   background-color: transparent;
 }
 
+.artist--background {
+  padding-bottom: 4rem !important;
+  background-image: url(/images/Artist-BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.artist--background .header-top {
+  background-color: transparent !important;
+}
+
+.artist--background .header-top .btn:not(.btn--linear-border) {
+  background-color: transparent !important;
+}
+
+.artist--background .header-top input#search {
+  background-color: transparent;
+}
+
+.artist--background .header-top input#search::placeholder {
+  background-color: transparent;
+}
+
 .main-text {
   padding: 11rem 0;
   font-size: 4.8rem;
@@ -416,6 +441,7 @@ main {
   color: #fff;
   padding: 1rem 0;
   transition: all 0.2s ease;
+  border-radius: 5px;
 }
 
 .playlists--content .horizontal-sharp {
@@ -613,6 +639,25 @@ main {
 .album--background .playlists--header, .album--background .playlists--content {
   display: grid !important;
   grid-template-columns: 1fr 1fr 0.2fr 0.2fr !important;
+}
+
+.artist--background .podcaster__image {
+  position: relative;
+}
+
+.artist--background .check-chevron {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.artist--background .check-chevron ion-icon {
+  font-size: 3rem;
+  transform: scale(1.7);
 }
 
 .footer {

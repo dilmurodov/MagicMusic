@@ -22,3 +22,9 @@
                     VIEW ALL
                 </div>
             </div>
+
+//========================================
+
+<div class="show-more">
+            <a href="#" class="btn">Show More</a>
+        </div>
