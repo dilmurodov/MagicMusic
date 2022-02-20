@@ -1,0 +1,8 @@
+.show-more{
+    width: 100%;
+    text-align: center;
+    a{
+        display: inline-block;
+        @include border(white);
+    }
+}

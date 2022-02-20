@@ -1,0 +1,28 @@
+.grid-structure {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.grid-feature-structure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .grid-feature-block {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        &--img {
+            object-fit: cover;
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                max-width: calc((38.8 / 2 - 1.5 + 0.1) * 1rem);
+                height: "";
+            }
+        }
+        &--about {
+            padding: 2rem;
+        }
+    }
+}
