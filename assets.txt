@@ -1,0 +1,24 @@
+<div class="row-title">
+                <div class="row-title--left">
+                    <h3 class="card-sub-title main-title">
+                        You might like these artists
+                    </h3>
+                   
+                </div>
+                <div class="row-title--right">
+                    <ion-icon name="chevron-back"></ion-icon>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+            </div>
+
+<div class="row-title">
+                <div class="row-title--left">
+                    <h3 class="card-sub-title main-title">
+                        You might like these artists
+                    </h3>
+                   
+                </div>
+                <div class="row-title--right">
+                    VIEW ALL
+                </div>
+            </div>
