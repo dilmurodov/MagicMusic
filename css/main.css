@@ -149,6 +149,34 @@ ul, li {
   background-color: transparent;
 }
 
+.current, .no-current {
+  position: relative;
+  padding: 1rem 0.3rem;
+}
+
+.current::after,
+.no-current::after {
+  content: "";
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-image: linear-gradient(90deg, #35EDFB -10%, #2D9BEF 30%, #9B2DEF 130%);
+  border-radius: 10px;
+  transition: all .3s ease;
+}
+
+.current::after {
+  width: 40%;
+}
+
+.current:hover::after,
+.no-current:hover::after {
+  width: 100%;
+}
+
 .main-text {
   padding: 11rem 0;
   font-size: 4.8rem;

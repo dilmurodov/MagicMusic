@@ -76,7 +76,7 @@
         }
     }
 }
-.artist--background{
+.artist--background {
     padding-bottom: 4rem !important;
     background-image: url(/images/Artist-BG.png);
     background-position: center;
@@ -95,4 +95,29 @@
             background-color: transparent;
         }
     }
+}
+
+.current, .no-current{
+    position: relative;
+    padding: 1rem 0.3rem;
+}
+.current::after, 
+.no-current::after{
+    content: "";
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-image: $linear-color-btn;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+.current::after{
+    width: 40%;
+}
+.current:hover::after,
+.no-current:hover::after{
+    width: 100%;
 }
