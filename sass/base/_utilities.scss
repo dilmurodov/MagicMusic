@@ -132,3 +132,17 @@
         font-size: 1.5rem;
     }
 }
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-not-space{
+        justify-content: flex-start;
+        align-items: center;
+    }
+   
+}
+.border{
+    background-color: #707070;
+    height: 1px;
+}
