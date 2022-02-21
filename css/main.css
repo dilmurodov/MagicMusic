@@ -831,6 +831,116 @@ main {
   font-size: 2rem;
 }
 
+.account-background {
+  transition: all 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #181212ec;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.sign {
+  padding: 5rem 9rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 60rem;
+  background-color: #ffffff;
+}
+
+.sign h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.sign-with {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-with-google, .sign-with-facebook {
+  border-radius: 30px;
+  padding: 0.7rem 3rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sign-with-facebook {
+  color: #ffffff;
+  background-color: #4267b2;
+}
+
+.sign-with-facebook ion-icon {
+  font-size: 3rem;
+}
+
+.sign-with-google {
+  background-color: white;
+  color: #303033;
+  border: 1px solid #161a1a;
+}
+
+.sign-with-google img {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.sign--email {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign--password {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign input[type="email"],
+.sign input[type="password"], .sign select {
+  border: 1px solid #2d9bef;
+  padding: 1.2rem 1rem;
+  font-size: 2rem;
+  outline: none;
+  border-radius: 7px;
+  color: #161a1a;
+}
+
+.sign .personal select:first-child, .sign .personal select:last-child {
+  border: 1px solid #161a1a;
+  color: #161a1a !important;
+  width: 40%;
+}
+
+.sign .sign-btn {
+  text-align: center;
+}
+
+.sign .sign-btn a {
+  display: inline;
+  padding: 1rem 6rem;
+  background-color: #2d9bef;
+  font-weight: 700;
+}
+
+.sign .x {
+  position: absolute;
+  right: 7rem;
+}
+
 .footer {
   width: 100%;
   padding: 4rem 10rem;
