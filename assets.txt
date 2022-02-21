@@ -28,3 +28,107 @@
 <div class="show-more">
             <a href="#" class="btn">Show More</a>
         </div>
+
+
+//========================================
+
+<header class="header after-sign">
+        <section class="header-top">
+            <div class="header-logo">
+                <img src="./images/logo.png" alt="">
+                <a class="btn" style="color: #707070;" href="#">Home</a>
+                <a class="btn" style="color: #707070;" href="#">Browse</a>
+                <a class="btn btn--linear-border" href="#">Library</a>
+            </div>
+            <div class="btn top-center-btns">
+                <a href="#" class="current" style="color: #ffffff;">Playlists</a>
+                <span class="anime"></span>
+                <a href="#" class="no-current" style="color: #707070;">Albums</a>
+                <span class="anime"></span>
+                <a href="#" class="no-current" style="color: #707070;">Artists</a>
+                <span class="anime"></span>
+                <a href="#" class="no-current" style="color: #707070;">Podcasts</a>
+                <span class="anime"></span>
+                <a href="#" class="schot no-current" style="color: #707070;">Listening History</a>
+                <span class="anime"></span>
+            </div>
+            <div class="header-menus">
+                <!-- <a class="btn btn--light header-menus__sign-up" href="">Sign up</a> -->
+                <div class="btn search--input">
+                    <label for="search" class="search-icon">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                    <input type="text" id="search" placeholder="Search">
+
+                </div>
+
+                <div class="account">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    &nbsp;&nbsp; John Doe &nbsp;&nbsp;
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+            </div>
+        </section>
+    </header>
+
+//========================================
+
+<div class="grid-structure">
+                <div>
+                    <img class="small__img--1" src="./images/Artist/row-2/img-7.png" alt="">
+                    <h6 class="card-sub-title">
+                        Queen
+                    </h6>
+                    <span class="card-sub-price">
+                        <ion-icon name="heart"></ion-icon>948.117
+                    </span>
+
+                </div>
+                <div>
+                    <img class="small__img--1" src="./images/Artist/row-2/img-8.png" alt="">
+                    <h6 class="card-sub-title">
+                        Queen
+                    </h6>
+                    <span class="card-sub-price">
+                        <ion-icon name="heart"></ion-icon>948.117
+                    </span>
+                </div>
+                <div>
+                    <img class="small__img--1" src="./images/Artist/row-2/img-9.png" alt="">
+                    <h6 class="card-sub-title">
+                        Queen
+                    </h6>
+                    <span class="card-sub-price">
+                        <ion-icon name="heart"></ion-icon>948.117
+                    </span>
+
+                </div>
+                <div>
+                    <img class="small__img--1" src="./images/Artist/row-2/img-10.png" alt="">
+                    <h6 class="card-sub-title">
+                        Queen
+                    </h6>
+                    <span class="card-sub-price">
+                        <ion-icon name="heart"></ion-icon>948.117
+                    </span>
+
+                </div>
+                <div>
+                    <img class="small__img--1" src="./images/Artist/row-2/img-11.png" alt="">
+                    <h6 class="card-sub-title">
+                        Queen
+                    </h6>
+                    <span class="card-sub-price">
+                        <ion-icon name="heart"></ion-icon>948.117
+                    </span>
+                </div>
+                <div>
+                    <img class="small__img--1" src="./images/Artist/row-2/img-12.png" alt="">
+                    <h6 class="card-sub-title">
+                        Queen
+                    </h6>
+                    <span class="card-sub-price">
+                        <ion-icon name="heart"></ion-icon>948.117
+                    </span>
+                </div>
+            </div>
