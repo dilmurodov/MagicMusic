@@ -17,6 +17,8 @@
 </head>
 
 <body class="landing">
+
+
     <header class="header">
         <section class="header-top">
             <div class="header-logo">
@@ -25,11 +27,11 @@
             <div class="header-menus">
                 <a href="">Download</a>
                 <a href="">Help</a>
-                <a class="btn header-menus__login" href="">Login</a>
-                <a class="btn btn--light header-menus__sign-up" href="">Sign up</a>
+                <a class="btn header-menus__login" href="#">Login</a>
+                <a class="btn btn--light header-menus__sign-up" onclick="och()" href="#">Sign up</a>
             </div>
         </section>
-   
+
 
         <!-- <section class="hero-slider footer--col footer--col-1">
             <h1 class="hero-slider__main-text main-text">
@@ -47,6 +49,8 @@
         </section> -->
 
     </header>
+
+
     <main>
         <section class="flow">
             <div class="flow-img">
@@ -205,6 +209,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="top--footer">
             <div>
@@ -239,12 +244,13 @@
                 <div class="">
                     <i class="fa-brands fa-facebook-f"></i>
                 </div>
-                
+
             </div>
 
         </div>
         <br><br><br>
-        <div style="width: 100%; display: flex; align-items: center; gap: 2rem; text-align: center; justify-content: center;">
+        <div
+            style="width: 100%; display: flex; align-items: center; gap: 2rem; text-align: center; justify-content: center;">
             <div class="bottom--footer">
                 <a href="#">Legal</a>
                 <a href="#">Privacy</a>
@@ -258,7 +264,100 @@
 
         </div>
     </footer>
-
+    <div class="account-background">
+        <div class="sign">
+            <div class="x" onclick="yop()" style="font-size: 2rem; text-align: right; cursor: pointer; display: inline;">X</div>
+            <h3>Ready to sign up?</h3>
+            <div class="sign-with">
+                <a href="#">
+                    <div class="sign-with-facebook">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        Facebook
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sign-with-google">
+                        <img src="./images/google.svg" alt="">
+                        Google
+                    </div>
+                </a>
+            </div>
+            <div class="sign--email margin-top-3">
+                <label class="span-text" for="email__sign">Email address</label>
+                <input id="email__sign" placeholder="tolibdilmurodov98@gmail.com" type="email" class="sign__email">
+            </div>
+            <div class="sign--password margin-top-3">
+                <label class="span-text" for="sign__password">Password</label>
+                <input type="password" placeholder="*******" class="sign__email" id="sign__password">
+            </div>
+            <div class="sign--password margin-top-3">
+                <input type="password" placeholder="Username" class="sign__email" id="sign__password">
+            </div>
+            <div class="personal flex margin-top-3">
+                <select class="span-text" name="dob-day" id="dob-day">
+                    <option value="">Date of Birth</option>
+                    <option value="">---</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select class="span-text" name="gender" id="gender">
+                    <option value="">Gender</option>
+                    <option value="">----</option>
+                    <option value="m">Male</option>
+                    <option value="w">Woman</option>
+                </select>
+            </div>
+            <div class="sign-btn margin-top-3">
+                <a href="#" class="btn">SIGN UP</a>
+            </div>
+            <p class="span-text margin-top-3" style="text-align: center; color: black;">
+                Already have an account?<a href="#" style="color: #2d9bef;">Log in</a>
+            </p>
+        </div>
+    </div>
+    <script>
+        const yop = function () {
+            const back = document.querySelector(".account-background");
+            back.style.visibility = "hidden";
+            back.style.opacity = 0;
+        }
+        const och = function() {
+            const back = document.querySelector(".account-background");
+            back.style.visibility = "visible";
+            back.style.opacity = 1;
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

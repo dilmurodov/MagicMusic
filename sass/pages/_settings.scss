@@ -1,0 +1,103 @@
+.settings-page {
+    .section-text {
+        font-size: 3rem;
+    }
+    .title--about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-img {
+            .img {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+        }
+        &-btn a {
+            font-size: 1.5rem;
+            padding: 0.7rem 2rem;
+            margin-right: 1rem;
+        }
+    }
+    .quality {
+        display: flex;
+        flex-direction: column;
+        label {
+            cursor: pointer;
+            padding: 0.5rem 0;
+        }
+        input[type="radio"] {
+            visibility: hidden;
+        }
+        input[type="radio"]:checked ~ label ion-icon {
+            color: $color-3 !important;
+        }
+
+        ion-icon {
+            font-size: 2rem;
+            color: #707070;
+        }
+    }
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    .toggle {
+        label {
+            vertical-align: middle;
+            display: inline-block;
+            position: relative;
+            height: 2.5rem;
+            width: 7rem;
+            background-color: $color-3;
+        }
+        label {
+            cursor: pointer;
+            font-size: 0;
+            color: transparent;
+            border-radius: 22px;
+        }
+        label:after {
+            content: "";
+            display: block;
+            height: 2.3rem;
+            width: 2.4rem;
+            position: absolute;
+            top: 2px;
+            right: 4.5rem;
+            border-radius: 50%;
+            background-color: #eee7e78f;
+            box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.15);
+        }
+        input:checked + label {
+            background: #9e9c95;
+        }
+        input:checked + label:after {
+            right: 2px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: -2px 0px 0px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            position: absolute !important;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            bottom: 0;
+        }
+        label {
+            transition: background-color 500ms ease;
+            &:after {
+                transition: right 500ms ease, background-color 500ms ease, box-shadow 500ms ease;
+            }
+        }
+    }
+}
+.language{
+    background-color: $color-4;
+    color: $color-3;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+}

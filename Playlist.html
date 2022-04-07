@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Playlists</title>
+</head>
+
+<body>
+    <main class="playlist--background">
+        <header class="header after-sign">
+            <section class="header-top">
+                <div class="header-logo">
+                    <img src="./images/logo.png" alt="">
+                    <a class="btn" style="color: #707070;" href="#">Home</a>
+                    <a class="btn" style="color: #707070;" href="#">Library</a>
+                    <a class="btn btn--linear-border" href="#">Browse</a>
+                </div>
+                <div class="btn top-center-btns">
+                    <a href="#" style="color: #707070;">ROCK/<span style="color: #ffff;">70s Rock Anthems</span></a>
+                    <span class="anime"></span>
+
+                </div>
+                <div class="header-menus">
+                    <!-- <a class="btn btn--light header-menus__sign-up" href="">Sign up</a> -->
+                    <div class="btn search--input">
+                        <label for="search" class="search-icon">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </label>
+                        <input type="text" id="search" placeholder="Search">
+
+                    </div>
+
+                    <div class="account">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        &nbsp;&nbsp; John Doe &nbsp;&nbsp;
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <div class="main home-sections">
+            <div class="podcaster">
+                <div class="podcaster__image">
+                    <img class="non-hover" src="./images/anthemis.png" alt="">
+                </div>
+                <div class="podcaster--about">
+                    <div class="podcaster--about-1">
+                        <h3 class="middle-text">Playlists</h3>
+                        <h1 class="podcaster-title big-text">70s Rock Anthems</h1>
+                        <span class="middle-text">Golden age of rock. Cover: Led Zeppelin</span>
+                        <span class="span-text">88 Songs, 9 hr 13 min</span>
+                    </div>
+                    <div class="podcaster--about-2">
+                        <a href="#" class="btn btn--linear">Play</a>
+                        <div class="heart-round">
+                            <ion-icon name="heart"></ion-icon>
+                        </div>
+                        <ion-icon class="icon-style" name="ellipsis-horizontal-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-top-5 podcasts-list">
+                <div class="search-episodes">
+                    <div class="btn search--input">
+                        <label for="search" class="search-icon">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </label>
+                        <input type="text" id="search" placeholder="Search episodes">
+                    </div>
+                </div>
+                <div class="middle-text" class="chevron-sharp">
+                    Playlist songs
+                    <ion-icon name="chevron-up-sharp"></ion-icon>
+                </div>
+            </div>
+            <div class="playlists">
+                <div class="playlists--header">
+                    <div class="title">
+                        <span class="playlists--order">#</span>
+                        TITLE
+                    </div>
+                    <div class="artist">
+                        ARTIST
+                    </div>
+                    <div class="album">
+                        ALBUM
+                    </div>
+                    <div class="time">
+                        TIME
+                    </div>
+                    <div class="other">
+                        <!-- <div class="other--dots">
+                            <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">1</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-1.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">2</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-2.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">3</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-3.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">4</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-4.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">5</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-5.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">6</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-6.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">7</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-7.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">8</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-8.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">9</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-9.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">10</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-10.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">11</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-11.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlists--content">
+                    <div class="title">
+                        <span class="playlists--order">12</span>
+                        <div class="playlists--images">
+                            <img src="./images/playlists/img-12.png" alt="">
+                            <span class="playlistName">Rhiannon</span>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        Flleetwood Mac
+                    </div>
+                    <div class="album">
+                        Fleetwood Mac
+                    </div>
+                    <div class="time">
+                        5:53
+                    </div>
+                    <div class="other">
+                        <div class="other--dots">
+                            <ion-icon class="horizontal-sharp" name="ellipsis-horizontal-sharp"></ion-icon>
+                        </div>
+                        <div class="other--heart">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="other--plus">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <section class="margin-top-5">
+                    <div class="row-title">
+                        <div class="row-title--left">
+                            <h3 class="card-sub-title main-title">
+                                Featured artists
+                            </h3>
+                           
+                        </div>
+                        <div class="row-title--right">
+                            <ion-icon name="chevron-back"></ion-icon>
+                            <ion-icon name="chevron-forward"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="grid-structure">
+                        <div style="text-align: center;">
+                            <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-1.png" alt="">
+                            <h6 class="card-sub-title">
+                                Queen
+                            </h6>
+                            <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-2.png" alt="">
+                            <h6 class="card-sub-title">
+                                Queen
+                            </h6>
+                            <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-3.png" alt="">
+                            <h6 class="card-sub-title">
+                                Queen
+                            </h6>
+                            <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-4.png" alt="">
+                            <h6 class="card-sub-title">
+                                Queen
+                            </h6>
+                            <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-5.png" alt="">
+                            <h6 class="card-sub-title">
+                                Queen
+                            </h6>
+                            <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <img class="small__img--1" style="text-align: center; box-shadow: none; transform: none;" src="./images/row-7/img-6.png" alt="">
+                            <h6 class="card-sub-title">
+                                Queen
+                            </h6>
+                            <span class="card-sub-price"><ion-icon name="heart"></ion-icon>948.117</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

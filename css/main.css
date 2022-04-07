@@ -74,6 +74,138 @@ ul, li {
   font-size: 4rem;
 }
 
+.playlist--background {
+  padding-bottom: 4rem !important;
+  background-image: url(/images/PlayList-BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.playlist--background .header-top {
+  background-color: transparent !important;
+}
+
+.playlist--background .header-top .btn:not(.btn--linear-border) {
+  background-color: transparent !important;
+}
+
+.playlist--background .header-top input#search {
+  background-color: transparent;
+}
+
+.playlist--background .header-top input#search::placeholder {
+  background-color: transparent;
+}
+
+.album--background {
+  padding-bottom: 4rem !important;
+  background-image: url(/images/Album-BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.album--background .header-top {
+  background-color: transparent !important;
+}
+
+.album--background .header-top .btn:not(.btn--linear-border) {
+  background-color: transparent !important;
+}
+
+.album--background .header-top input#search {
+  background-color: transparent;
+}
+
+.album--background .header-top input#search::placeholder {
+  background-color: transparent;
+}
+
+.artist--background {
+  padding-bottom: 4rem !important;
+  background-image: url(/images/Artist-BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.artist--background .header-top {
+  background-color: transparent !important;
+}
+
+.artist--background .header-top .btn:not(.btn--linear-border) {
+  background-color: transparent !important;
+}
+
+.artist--background .header-top input#search {
+  background-color: transparent;
+}
+
+.artist--background .header-top input#search::placeholder {
+  background-color: transparent;
+}
+
+.current, .no-current {
+  position: relative;
+  padding: 1rem 0.3rem;
+}
+
+.current::after,
+.no-current::after {
+  content: "";
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-image: linear-gradient(90deg, #35EDFB -10%, #2D9BEF 30%, #9B2DEF 130%);
+  border-radius: 10px;
+  transition: all .3s ease;
+}
+
+.current::after {
+  width: 40%;
+}
+
+.current:hover::after,
+.no-current:hover::after {
+  width: 100%;
+}
+
+.schot {
+  position: relative;
+}
+
+.schot::before {
+  content: "+1";
+  color: #2dceef;
+  position: absolute;
+  top: 0;
+  left: 90%;
+  font-size: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-not-space {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.border {
+  background-color: #707070;
+  height: 1px;
+}
+
 .main-text {
   padding: 11rem 0;
   font-size: 4.8rem;
@@ -316,6 +448,17 @@ main {
   font-size: 1.6rem;
 }
 
+.overview .header-overview {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.overview .header-overview span {
+  padding-bottom: 0.6rem;
+}
+
 .show-more {
   width: 100%;
   text-align: center;
@@ -324,6 +467,63 @@ main {
 .show-more a {
   display: inline-block;
   border: 1px solid white;
+}
+
+.chevron-sharp {
+  display: flex;
+}
+
+.playlists--header, .playlists--content {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1.3fr 1.3fr 0.4fr 0.4fr;
+  font-size: 1.6rem;
+  color: #707070;
+  align-items: center;
+}
+
+.playlists--header .other, .playlists--content .other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playlists--images {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.playlists--content {
+  color: #fff;
+  padding: 1rem 0;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+}
+
+.playlists--content .horizontal-sharp {
+  visibility: hidden;
+}
+
+.playlists--content:hover {
+  background-color: #7070704d;
+}
+
+.playlists--content:hover .horizontal-sharp {
+  visibility: visible;
+}
+
+.playlists--content .title, .playlists--header .title {
+  font-weight: 400;
+  position: relative;
+  padding-left: 4rem;
+}
+
+.playlists--order {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
 }
 
 .podcast--background {
@@ -491,6 +691,254 @@ main {
 
 .podcasts__body--content:hover .before__icon--2 {
   visibility: visible;
+}
+
+.album--background .playlists--header, .album--background .playlists--content {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 0.2fr 0.2fr !important;
+}
+
+.artist--background .podcaster__image {
+  position: relative;
+}
+
+.artist--background .check-chevron {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.artist--background .check-chevron ion-icon {
+  font-size: 3rem;
+  transform: scale(1.7);
+}
+
+.settings-page .section-text {
+  font-size: 3rem;
+}
+
+.settings-page .title--about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-page .title--about-img .img {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.settings-page .title--about-btn a {
+  font-size: 1.5rem;
+  padding: 0.7rem 2rem;
+  margin-right: 1rem;
+}
+
+.settings-page .quality {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-page .quality label {
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.settings-page .quality input[type="radio"] {
+  visibility: hidden;
+}
+
+.settings-page .quality input[type="radio"]:checked ~ label ion-icon {
+  color: #2dceef !important;
+}
+
+.settings-page .quality ion-icon {
+  font-size: 2rem;
+  color: #707070;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.wrap .toggle label {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  height: 2.5rem;
+  width: 7rem;
+  background-color: #2dceef;
+}
+
+.wrap .toggle label {
+  cursor: pointer;
+  font-size: 0;
+  color: transparent;
+  border-radius: 22px;
+}
+
+.wrap .toggle label:after {
+  content: "";
+  display: block;
+  height: 2.3rem;
+  width: 2.4rem;
+  position: absolute;
+  top: 2px;
+  right: 4.5rem;
+  border-radius: 50%;
+  background-color: #eee7e78f;
+  box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.wrap .toggle input:checked + label {
+  background: #9e9c95;
+}
+
+.wrap .toggle input:checked + label:after {
+  right: 2px;
+  background-color: white;
+  box-shadow: -2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrap .toggle input {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  bottom: 0;
+}
+
+.wrap .toggle label {
+  transition: background-color 500ms ease;
+}
+
+.wrap .toggle label:after {
+  transition: right 500ms ease, background-color 500ms ease, box-shadow 500ms ease;
+}
+
+.language {
+  background-color: #161a1a;
+  color: #2dceef;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+}
+
+.account-background {
+  transition: all 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #181212ec;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.sign {
+  padding: 5rem 9rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 60rem;
+  background-color: #ffffff;
+}
+
+.sign h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.sign-with {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-with-google, .sign-with-facebook {
+  border-radius: 30px;
+  padding: 0.7rem 3rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sign-with-facebook {
+  color: #ffffff;
+  background-color: #4267b2;
+}
+
+.sign-with-facebook ion-icon {
+  font-size: 3rem;
+}
+
+.sign-with-google {
+  background-color: white;
+  color: #303033;
+  border: 1px solid #161a1a;
+}
+
+.sign-with-google img {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.sign--email {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign--password {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign input[type="email"],
+.sign input[type="password"], .sign select {
+  border: 1px solid #2d9bef;
+  padding: 1.2rem 1rem;
+  font-size: 2rem;
+  outline: none;
+  border-radius: 7px;
+  color: #161a1a;
+}
+
+.sign .personal select:first-child, .sign .personal select:last-child {
+  border: 1px solid #161a1a;
+  color: #161a1a !important;
+  width: 40%;
+}
+
+.sign .sign-btn {
+  text-align: center;
+}
+
+.sign .sign-btn a {
+  display: inline;
+  padding: 1rem 6rem;
+  background-color: #2d9bef;
+  font-weight: 700;
+}
+
+.sign .x {
+  position: absolute;
+  right: 7rem;
 }
 
 .footer {
@@ -691,6 +1139,82 @@ main {
 
 .grid-feature-structure .grid-feature-block--about {
   padding: 2rem;
+}
+
+.grid-form-structure {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 4fr;
+  column-gap: 1.7rem;
+}
+
+.grid-form-structure label {
+  display: block;
+}
+
+.grid-form-structure input,
+.grid-form-structure select {
+  background-color: #161a1a;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+  width: 100%;
+  color: #ffffff !important;
+  border: none;
+  font-size: 1.5rem;
+  outline: none;
+  margin-bottom: 0 !important;
+}
+
+.grid-form-structure input::placeholder,
+.grid-form-structure select::placeholder {
+  background-color: #161a1a;
+  color: #ffffff !important;
+}
+
+.grid-form-structure > div {
+  border-bottom: 2px solid #707070;
+  margin-bottom: 1rem;
+}
+
+.grid-form-structure .name {
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+
+.grid-form-structure .last__name {
+  grid-row: 1/2;
+  grid-column: 4/7;
+}
+
+.grid-form-structure .email {
+  grid-row: 2/3;
+  grid-column: 1/7;
+}
+
+.grid-form-structure .gender {
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+
+.grid-form-structure .country {
+  grid-row: 3/4;
+  grid-column: 4/7;
+}
+
+.grid-form-structure .day .month .year {
+  grid-row: 4/5;
+}
+
+.grid-form-structure .day {
+  grid-column: 1/3;
+}
+
+.grid-form-structure .month {
+  grid-column: 3/5;
+}
+
+.grid-form-structure .year {
+  grid-column: 5/7;
 }
 
 .btn {

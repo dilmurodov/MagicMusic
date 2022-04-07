@@ -1,0 +1,8 @@
+.album--background{
+    .playlists{
+        &--header, &--content{
+            display: grid !important;
+            grid-template-columns: 1fr 1fr 0.2fr 0.2fr !important;
+        }
+    }
+}
